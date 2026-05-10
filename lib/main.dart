@@ -1,26 +1,35 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:news/features/onboarding/splash.dart';
 import 'package:news/search.dart';
-import 'package:news/splash.dart';
 import 'package:news/weather.dart';
-void main() {
+void main()async {
+  WidgetsFlutterBinding.ensureInitialized();
+  //await CacheHelper.init();
   runApp( NewsApp());
 }
 
-class NewsApp extends StatelessWidget {
+class NewsApp extends StatefulWidget {
   const NewsApp({super.key});
 
+  @override
+  State<NewsApp> createState() => _NewsAppState();
+}
 
+class _NewsAppState extends State<NewsApp> {
   @override
   Widget build(BuildContext context) {
+    //String? lang = CacheHelper.getValue(CacheKeys.lang) as String?;
     return ScreenUtilInit(
       designSize: const Size(430, 932),
       builder: (context,child)=>MaterialApp(
+        //translations: TranslationHelper(),
+        //locale: Locale( lang ?? 'en'),
         theme: ThemeData(
          fontFamily: "schibsted_grotesk"
         ),
         debugShowCheckedModeBanner: false,
-        home: Weather(),
+        home: Splash(),
       ),
     );
   }
