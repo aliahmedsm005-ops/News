@@ -1,7 +1,8 @@
 abstract class EndPoints {
-  //From PostMan
-  //static const String baseUrl= "https://nti-ecommerce-api-production-60af.up.railway.app/api";
- //  static const String weather = 'login';
- //  static const String everything = 'register';
- //  static const String topHeadlines = 'refresh_token';
-  }
+  static const String baseURL = 'https://newsapi.org/v2/';
+  static const String everything = 'everything';
+  static const String topHeadlines = 'top-headlines';
+  static const String weatherBaseURL = 'https://api.openweathermap.org/data/2.5/';
+  static const String weather = 'weather';
+
+}

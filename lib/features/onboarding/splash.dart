@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:news/core/helper/navigator.dart';
 import 'package:news/core/utils/app_assets.dart';
+import 'package:news/features/home/views/explore_views.dart';
 import 'start.dart';
 class Splash extends StatefulWidget{
   const Splash({super.key});
@@ -18,7 +19,7 @@ class _SplashState extends State<Splash> {
     super.initState();
     Future.delayed(Duration(seconds: 2)).then((v)
     {
-      goTo(context, Start());
+      goTo(context, ExploreView());
 
     }
     );
