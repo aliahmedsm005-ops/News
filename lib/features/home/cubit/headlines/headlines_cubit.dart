@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:news/features/home/cubit/headlines_state.dart';
-import 'package:news/features/home/data/Repo/news_Repo.dart';
+import 'package:news/features/home/cubit/headlines/headlines_state.dart';
+import '../../data/repo/news_repo.dart';
 
 class HeadlinesCubit extends Cubit<TopHeadlinesStates>{
   HeadlinesCubit() : super(TopHeadlinesInitialState()){

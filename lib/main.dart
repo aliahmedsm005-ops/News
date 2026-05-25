@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:news/features/onboarding/splash.dart';
 import 'package:news/search.dart';
-import 'package:news/weather.dart';
 void main()async {
   WidgetsFlutterBinding.ensureInitialized();
   //await CacheHelper.init();

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:news/features/home/cubit/headlines_cubit.dart';
-import 'package:news/features/home/cubit/headlines_state.dart';
+import 'package:news/features/home/cubit/headlines/headlines_cubit.dart';
+import 'package:news/features/home/cubit/headlines/headlines_state.dart';
 import 'package:news/features/home/views/widget/news_item_builder.dart';
 import 'package:news/features/home/views/widget/section_item_builder.dart';
 class ExploreView extends StatelessWidget {
